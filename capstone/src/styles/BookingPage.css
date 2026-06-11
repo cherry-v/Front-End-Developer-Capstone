@@ -35,6 +35,26 @@
     margin-top: 0.4rem;
 }
 
+.booking-form [aria-invalid="true"] {
+    border-color: #c84630;
+    box-shadow: 0 0 0 2px rgba(200, 70, 48, 0.12);
+}
+
+.form-error {
+    margin-top: -0.45rem;
+    margin-bottom: 0.1rem;
+    color: #a83221;
+    font-size: 0.86rem;
+    line-height: 1.35;
+}
+
+.booking-form button:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
 .booking-results {
     margin-top: 1.4rem;
 }
