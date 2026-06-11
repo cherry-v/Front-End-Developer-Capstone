@@ -1,0 +1,36 @@
+.booking-page {
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.booking-intro,
+.booking-note {
+    color: #4f5d59;
+}
+
+.booking-form {
+    margin-top: 1rem;
+    display: grid;
+    gap: 0.9rem;
+    padding: 1.25rem;
+    background: #f8faf9;
+    border: 1px solid #e5ece9;
+    border-radius: 12px;
+}
+
+.booking-form label {
+    font-weight: 700;
+    color: #2f3d39;
+}
+
+.booking-form input,
+.booking-form select {
+    padding: 0.6rem 0.7rem;
+    border: 1px solid #cfdad5;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.booking-form button {
+    margin-top: 0.4rem;
+}
