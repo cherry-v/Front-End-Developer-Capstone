@@ -1,17 +1,21 @@
 import { initializeTimes, updateTimes } from "./Main";
 
-test("initializeTimes returns expected default times", () => {
-    expect(initializeTimes()).toEqual([
-        "17:00",
-        "18:00",
-        "19:00",
-        "20:00",
-        "21:00",
-    ]);
+afterEach(() => {
+    jest.restoreAllMocks();
 });
 
-test("updateTimes returns the same state value", () => {
-    const state = ["17:00", "18:00", "19:00"];
+test("initializeTimes returns available times from fetchAPI", () => {
+    const expectedTimes = ["17:00", "18:00", "19:00"];
+    window.fetchAPI = jest.fn(() => expectedTimes);
 
-    expect(updateTimes(state, { type: "unknown_action" })).toEqual(state);
+    expect(initializeTimes()).toEqual(expectedTimes);
+});
+
+test("updateTimes returns times from fetchAPI for selected date dispatch", () => {
+    const expectedTimes = ["18:00", "19:00", "20:00"];
+    window.fetchAPI = jest.fn(() => expectedTimes);
+
+    expect(
+        updateTimes([], { type: "date_changed", date: "2026-06-11" })
+    ).toEqual(expectedTimes);
 });

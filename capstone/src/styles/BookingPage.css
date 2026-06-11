@@ -34,3 +34,37 @@
 .booking-form button {
     margin-top: 0.4rem;
 }
+
+.booking-results {
+    margin-top: 1.4rem;
+}
+
+.booking-empty {
+    margin-top: 0.4rem;
+}
+
+.booking-table {
+    width: 100%;
+    margin-top: 0.6rem;
+    border-collapse: collapse;
+    background: #ffffff;
+    border: 1px solid #dfe8e4;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.booking-table th,
+.booking-table td {
+    text-align: left;
+    padding: 0.65rem 0.75rem;
+    border-bottom: 1px solid #edf3f0;
+}
+
+.booking-table th {
+    background: #f1f6f3;
+    color: #2f3d39;
+}
+
+.booking-table tbody tr:last-child td {
+    border-bottom: none;
+}
