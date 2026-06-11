@@ -1,23 +1,60 @@
 import "./styles/Navigation.css";
+import { NavLink } from "react-router-dom";
 
 function Nav() {
     return (
         <nav className="navigation">
             <ul className="menu-items">
                 <li>
-                    <a href="/" className="active-links">Home</a>
+                    <NavLink
+                        to="/"
+                        className={({ isActive }) =>
+                            `nav-links ${isActive ? "active-links" : ""}`
+                        }
+                        end
+                    >
+                        Home
+                    </NavLink>
                 </li>
                 <li>
-                    <a href="/about" className="nav-links">About</a>
+                    <NavLink
+                        to="/about"
+                        className={({ isActive }) =>
+                            `nav-links ${isActive ? "active-links" : ""}`
+                        }
+                    >
+                        About
+                    </NavLink>
                 </li>
                 <li>
-                    <a href="/menu" className="nav-links">Menu</a>
+                    <NavLink
+                        to="/menu"
+                        className={({ isActive }) =>
+                            `nav-links ${isActive ? "active-links" : ""}`
+                        }
+                    >
+                        Menu
+                    </NavLink>
                 </li>
                 <li>
-                    <a href="/reservations" className="nav-links">Reservations</a>
+                    <NavLink
+                        to="/booking"
+                        className={({ isActive }) =>
+                            `nav-links ${isActive ? "active-links" : ""}`
+                        }
+                    >
+                        Reservations
+                    </NavLink>
                 </li>
                 <li>
-                    <a href="/order-online" className="nav-links">Order Online</a>
+                    <NavLink
+                        to="/order-online"
+                        className={({ isActive }) =>
+                            `nav-links ${isActive ? "active-links" : ""}`
+                        }
+                    >
+                        Order Online
+                    </NavLink>
                 </li>
             </ul>
         </nav>

@@ -1,15 +1,27 @@
+import { Route, Routes } from "react-router-dom";
+import BookingPage from "./BookingPage";
+import HomePage from "./HomePage";
+import UnderConstructionPage from "./UnderConstructionPage";
+
 function Main() {
     return (
         <main>
-            <section className="main-content">
-                <h1>Little Lemon</h1>
-                <h2>Chicago</h2>
-                <p>
-                    We are a family-owned Mediterranean restaurant focused on
-                    traditional recipes served with a modern twist.
-                </p>
-                <span className="main-tagline">Reserve a table today</span>
-            </section>
+            <Routes>
+                <Route path="/" element={<HomePage />} />
+                <Route path="/booking" element={<BookingPage />} />
+                <Route
+                    path="/about"
+                    element={<UnderConstructionPage title="About" />}
+                />
+                <Route
+                    path="/menu"
+                    element={<UnderConstructionPage title="Menu" />}
+                />
+                <Route
+                    path="/order-online"
+                    element={<UnderConstructionPage title="Order Online" />}
+                />
+            </Routes>
         </main>
     );
 }
