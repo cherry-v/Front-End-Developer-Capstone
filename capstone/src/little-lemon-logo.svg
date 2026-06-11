@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" role="img" aria-labelledby="title">
+  <title>Little Lemon Logo</title>
+  <rect width="320" height="90" fill="#495E57" />
+  <circle cx="48" cy="45" r="22" fill="#F4CE14" />
+  <text x="86" y="38" fill="#F4CE14" font-size="24" font-family="Arial, sans-serif" font-weight="700">
+    LITTLE
+  </text>
+  <text x="86" y="66" fill="#EDEFEE" font-size="24" font-family="Arial, sans-serif" font-weight="700">
+    LEMON
+  </text>
+</svg>
