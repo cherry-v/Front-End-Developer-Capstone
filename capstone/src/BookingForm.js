@@ -82,9 +82,12 @@ function BookingForm({
                 min={today}
                 required
                 aria-invalid={showFieldError("date")}
+                aria-describedby={showFieldError("date") ? "res-date-error" : undefined}
             />
             {showFieldError("date") && (
-                <p className="form-error">{errors.date}</p>
+                <p id="res-date-error" className="form-error" role="alert">
+                    {errors.date}
+                </p>
             )}
 
             <label htmlFor="res-time">Choose time</label>
@@ -95,6 +98,7 @@ function BookingForm({
                 onBlur={() => handleBlur("time")}
                 required
                 aria-invalid={showFieldError("time")}
+                aria-describedby={showFieldError("time") ? "res-time-error" : undefined}
             >
                 {availableTimes.map((slot) => (
                     <option key={slot} value={slot}>
@@ -103,7 +107,9 @@ function BookingForm({
                 ))}
             </select>
             {showFieldError("time") && (
-                <p className="form-error">{errors.time}</p>
+                <p id="res-time-error" className="form-error" role="alert">
+                    {errors.time}
+                </p>
             )}
 
             <label htmlFor="guests">Number of guests</label>
@@ -117,9 +123,12 @@ function BookingForm({
                 onBlur={() => handleBlur("guests")}
                 required
                 aria-invalid={showFieldError("guests")}
+                aria-describedby={showFieldError("guests") ? "guests-error" : undefined}
             />
             {showFieldError("guests") && (
-                <p className="form-error">{errors.guests}</p>
+                <p id="guests-error" className="form-error" role="alert">
+                    {errors.guests}
+                </p>
             )}
 
             <label htmlFor="occasion">Occasion</label>
@@ -130,15 +139,22 @@ function BookingForm({
                 onBlur={() => handleBlur("occasion")}
                 required
                 aria-invalid={showFieldError("occasion")}
+                aria-describedby={showFieldError("occasion") ? "occasion-error" : undefined}
             >
                 <option>Birthday</option>
                 <option>Anniversary</option>
             </select>
             {showFieldError("occasion") && (
-                <p className="form-error">{errors.occasion}</p>
+                <p id="occasion-error" className="form-error" role="alert">
+                    {errors.occasion}
+                </p>
             )}
 
-            <button type="submit" className="cta-button" disabled={!isFormValid}>
+            <button
+                type="submit"
+                className="cta-button"
+                disabled={!isFormValid}
+            >
                 Make Your Reservation
             </button>
         </form>

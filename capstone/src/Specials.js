@@ -28,16 +28,16 @@ const specials = [
 
 function Specials() {
     return (
-        <section className="specials">
+        <section className="specials" aria-labelledby="specials-title">
             <div className="section-heading">
-                <h2>Specials</h2>
-                <button type="button" className="cta-button">
+                <h2 id="specials-title">Specials</h2>
+                <button type="button" className="cta-button" aria-label="On Click">
                     Online Menu
                 </button>
             </div>
-            <div className="cards-grid">
+            <div className="cards-grid" role="list" aria-label="Special menu items">
                 {specials.map((item) => (
-                    <article key={item.title} className="card">
+                    <article key={item.title} className="card" role="listitem">
                         <img
                             src={item.image}
                             alt={item.title}

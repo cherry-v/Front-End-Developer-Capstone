@@ -2,9 +2,9 @@ import chicagoImage from "./assets/lemon.jpg";
 
 function Chicago() {
     return (
-        <section className="chicago-story">
+        <section className="chicago-story" aria-labelledby="chicago-title">
             <div>
-                <h2>Little Lemon Chicago</h2>
+                <h2 id="chicago-title">Little Lemon Chicago</h2>
                 <p>
                     Founded by two chefs with a passion for Mediterranean
                     cooking, Little Lemon brings authentic family recipes to the

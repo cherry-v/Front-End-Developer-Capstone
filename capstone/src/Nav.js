@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 function Nav() {
     return (
-        <nav className="navigation">
+        <nav className="navigation" aria-label="Primary navigation">
             <ul className="menu-items">
                 <li>
                     <NavLink
@@ -12,6 +12,7 @@ function Nav() {
                             `nav-links ${isActive ? "active-links" : ""}`
                         }
                         end
+                        aria-label="On Click"
                     >
                         Home
                     </NavLink>
@@ -22,6 +23,7 @@ function Nav() {
                         className={({ isActive }) =>
                             `nav-links ${isActive ? "active-links" : ""}`
                         }
+                        aria-label="On Click"
                     >
                         About
                     </NavLink>
@@ -32,6 +34,7 @@ function Nav() {
                         className={({ isActive }) =>
                             `nav-links ${isActive ? "active-links" : ""}`
                         }
+                        aria-label="On Click"
                     >
                         Menu
                     </NavLink>
@@ -42,6 +45,7 @@ function Nav() {
                         className={({ isActive }) =>
                             `nav-links ${isActive ? "active-links" : ""}`
                         }
+                        aria-label="On Click"
                     >
                         Reservations
                     </NavLink>
@@ -52,6 +56,7 @@ function Nav() {
                         className={({ isActive }) =>
                             `nav-links ${isActive ? "active-links" : ""}`
                         }
+                        aria-label="On Click"
                     >
                         Order Online
                     </NavLink>

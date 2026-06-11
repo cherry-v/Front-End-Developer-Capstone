@@ -3,15 +3,15 @@ import gourmetImage from "./assets/gourmet.jpg";
 
 function CallToAction() {
     return (
-        <section className="hero">
+        <section className="hero" aria-labelledby="hero-title">
             <div>
-                <h1>Little Lemon</h1>
+                <h1 id="hero-title">Little Lemon</h1>
                 <h2>Chicago</h2>
                 <p>
                     Fresh Mediterranean flavors, warm hospitality, and a cozy
                     neighborhood atmosphere.
                 </p>
-                <Link to="/booking" className="cta-button">
+                <Link to="/booking" className="cta-button" aria-label="On Click">
                     Reserve a Table
                 </Link>
             </div>

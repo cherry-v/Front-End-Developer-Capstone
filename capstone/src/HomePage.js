@@ -6,12 +6,12 @@ import "./styles/HomePage.css";
 
 function HomePage() {
     return (
-        <div className="home-page">
+        <section className="home-page" aria-label="Homepage content">
             <CallToAction />
             <Specials />
             <CustomersSay />
             <Chicago />
-        </div>
+        </section>
     );
 }
 

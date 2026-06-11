@@ -25,11 +25,11 @@ const testimonials = [
 
 function CustomersSay() {
     return (
-        <section className="testimonials">
-            <h2>What Customers Say</h2>
-            <div className="cards-grid">
+        <section className="testimonials" aria-labelledby="testimonials-title">
+            <h2 id="testimonials-title">What Customers Say</h2>
+            <div className="cards-grid" role="list" aria-label="Customer testimonials">
                 {testimonials.map((item) => (
-                    <article key={item.name} className="card testimonial-card">
+                    <article key={item.name} className="card testimonial-card" role="listitem">
                         <img
                             src={item.image}
                             alt={`${item.name} avatar`}
