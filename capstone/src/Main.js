@@ -1,13 +1,14 @@
 import { useReducer } from "react";
 import { Route, Routes, useNavigate } from "react-router-dom";
-import BookingPage from "./BookingPage";
-import ConfirmedBooking from "./ConfirmedBooking";
-import HomePage from "./HomePage";
-import UnderConstructionPage from "./UnderConstructionPage";
+import BookingPage from "./pages/BookingPage";
+import ConfirmedBooking from "./pages/ConfirmedBooking";
+import HomePage from "./pages/HomePage";
+import UnderConstructionPage from "./pages/UnderConstructionPage";
 
 const DEFAULT_AVAILABLE_TIMES = ["17:00", "18:00", "19:00", "20:00", "21:00"];
 
 function getAvailableTimes(date) {
+    // Coursera API script is injected from public/index.html at runtime.
     if (typeof window.fetchAPI === "function") {
         return window.fetchAPI(date);
     }
@@ -20,6 +21,7 @@ export function initializeTimes() {
 }
 
 export function updateTimes(state, action) {
+    // Keep reducer shape ready for future date-based API behavior.
     if (action?.type === "date_changed") {
         return getAvailableTimes(new Date(action.date));
     }

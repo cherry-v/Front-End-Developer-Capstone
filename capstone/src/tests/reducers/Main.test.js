@@ -1,4 +1,4 @@
-import { initializeTimes, updateTimes } from "./Main";
+import { initializeTimes, updateTimes } from "../../Main";
 
 afterEach(() => {
     jest.restoreAllMocks();

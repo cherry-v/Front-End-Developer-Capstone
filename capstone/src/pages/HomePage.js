@@ -1,8 +1,8 @@
-import CallToAction from "./CallToAction";
-import Chicago from "./Chicago";
-import CustomersSay from "./CustomersSay";
-import Specials from "./Specials";
-import "./styles/HomePage.css";
+import CallToAction from "../components/home/CallToAction";
+import Chicago from "../components/home/Chicago";
+import CustomersSay from "../components/home/CustomersSay";
+import Specials from "../components/home/Specials";
+import "../styles/HomePage.css";
 
 function HomePage() {
     return (

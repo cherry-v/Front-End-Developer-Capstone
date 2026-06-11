@@ -1,6 +1,6 @@
-import customerImageOne from "./assets/bruschetta1.jpg";
-import customerImageTwo from "./assets/bruschetta2.jpg";
-import customerImageThree from "./assets/istockphoto-537818802-612x612.jpg";
+import customerImageOne from "../../assets/bruschetta1.jpg";
+import customerImageTwo from "../../assets/bruschetta2.jpg";
+import customerImageThree from "../../assets/istockphoto-537818802-612x612.jpg";
 
 const testimonials = [
     {

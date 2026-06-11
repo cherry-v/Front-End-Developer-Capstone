@@ -150,11 +150,7 @@ function BookingForm({
                 </p>
             )}
 
-            <button
-                type="submit"
-                className="cta-button"
-                disabled={!isFormValid}
-            >
+            <button type="submit" className="cta-button" disabled={!isFormValid}>
                 Make Your Reservation
             </button>
         </form>

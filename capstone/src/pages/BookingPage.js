@@ -1,6 +1,6 @@
 import { useState } from "react";
-import BookingForm from "./BookingForm";
-import "./styles/BookingPage.css";
+import BookingForm from "../components/booking/BookingForm";
+import "../styles/BookingPage.css";
 
 function BookingPage({ availableTimes, dispatch, submitForm }) {
     const [bookingData, setBookingData] = useState([]);

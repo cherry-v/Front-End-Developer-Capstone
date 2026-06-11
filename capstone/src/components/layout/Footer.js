@@ -1,4 +1,4 @@
-import "./styles/Footer.css";
+import "../../styles/Footer.css";
 
 function Footer() {
     return (
@@ -17,7 +17,6 @@ function Footer() {
                     </ul>
                 </section>
             </div>
-
         </footer>
     );
 }

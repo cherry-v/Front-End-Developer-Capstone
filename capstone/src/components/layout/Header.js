@@ -1,5 +1,5 @@
-import logo from './little-lemon-logo.svg';
-import "./styles/Header.css";
+import logo from "../../assets/branding/little-lemon-logo.svg";
+import "../../styles/Header.css";
 
 function Header() {
     return (

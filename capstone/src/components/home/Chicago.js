@@ -1,4 +1,4 @@
-import chicagoImage from "./assets/lemon.jpg";
+import chicagoImage from "../../assets/lemon.jpg";
 
 function Chicago() {
     return (

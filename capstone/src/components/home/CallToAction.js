@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import gourmetImage from "./assets/gourmet.jpg";
+import gourmetImage from "../../assets/gourmet.jpg";
 
 function CallToAction() {
     return (

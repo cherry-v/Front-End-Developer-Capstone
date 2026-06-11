@@ -1,6 +1,6 @@
-import bruschettaImage from "./assets/bruschetta.jpg";
-import cremeImage from "./assets/creme.jpg";
-import saladImage from "./assets/salad.jpg";
+import bruschettaImage from "../../assets/bruschetta.jpg";
+import cremeImage from "../../assets/creme.jpg";
+import saladImage from "../../assets/salad.jpg";
 
 const specials = [
     {
@@ -38,10 +38,7 @@ function Specials() {
             <div className="cards-grid" role="list" aria-label="Special menu items">
                 {specials.map((item) => (
                     <article key={item.title} className="card" role="listitem">
-                        <img
-                            src={item.image}
-                            alt={item.title}
-                        />
+                        <img src={item.image} alt={item.title} />
                         <div className="card-body">
                             <h3>{item.title}</h3>
                             <span className="card-price">{item.price}</span>
