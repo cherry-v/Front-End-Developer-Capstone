@@ -1,0 +1,21 @@
+.footer-background {
+    background-color: #333;
+    color: #fff;
+    border-radius: 12px 12px 0 0;
+}
+
+.footer-container {
+    display: grid;
+    padding: 20px 10px;
+    gap: 1rem;
+}
+
+.footer-container p {
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .footer-container p {
+        font-size: 0.95rem;
+    }
+  }
